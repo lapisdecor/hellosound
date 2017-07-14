@@ -1,0 +1,5 @@
+#!/usr/bin/env python3
+
+from hellosound import hellosound
+
+hellosound.playme()
