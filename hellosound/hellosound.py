@@ -6,6 +6,6 @@ import subprocess
 
 def playme():
     """ Play a sound from freedesktop.org """
-    soundfile = "/usr/share/sounds/freedesktop/stereo/phone-incoming-call.oga"
+    soundfile = "$SNAP/usr/share/sounds/freedesktop/stereo/phone-incoming-call.oga"
 
     subprocess.Popen(["paplay", soundfile])
