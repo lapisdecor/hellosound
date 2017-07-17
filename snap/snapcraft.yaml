@@ -9,7 +9,7 @@ confinement: strict # use 'strict' once you have the right plugs and slots
 
 apps:
   hellosound:
-    command: desktop-launch $SNAP/bin/hello
+    command: hello
     plugs: [x11, pulseaudio]
 
 parts:
