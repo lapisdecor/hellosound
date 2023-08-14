@@ -7,7 +7,9 @@ import os
 
 def playme():
     """ Play a sound from freedesktop.org """
+
+    print(os.environ["SNAP"])
     
-    soundfile = os.environ["SNAP"] + "/usr/share/sounds/freedesktop/stereo/phone-incoming-call.oga"
+    soundfile = "/usr/share/sounds/freedesktop/stereo/phone-incoming-call.oga"
 
     subprocess.Popen(["paplay", soundfile])
