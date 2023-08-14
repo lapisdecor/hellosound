@@ -4,12 +4,13 @@
 
 import subprocess
 import os
+import sys
+from pkg_resources import resource_filename
+import subprocess
+
+soundfile = resource_filename(__name__, 'sounds/' + 'ring.oga')
 
 def playme():
     """ Play a sound from freedesktop.org """
-
-    print(os.environ["SNAP"])
-    
-    soundfile = "/usr/share/sounds/freedesktop/stereo/phone-incoming-call.oga"
 
     subprocess.Popen(["paplay", soundfile])
