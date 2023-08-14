@@ -13,7 +13,7 @@ test_requirements = [
 
 setup(
     name='hellosound',
-    version='1.0',
+    version='git',
     description='Test a sound in pulseaudio',
     long_description=readme,
     author='Luis Louro',
@@ -31,9 +31,6 @@ setup(
         'License :: OSI Approved :: MIT License',
         'Natural Language :: English',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.3',
-        'Programming Language :: Python :: 3.4',
-        'Programming Language :: Python :: 3.5',
     ],
     test_suite='tests',
     tests_require=test_requirements,
