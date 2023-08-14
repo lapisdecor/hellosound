@@ -14,7 +14,7 @@ apps:
   hellosound:
     extensions: [gnome]
     command: bin/hello
-    plugs: [x11, wayland, pulseaudio]
+    plugs: [pulseaudio]
 
 parts:
   hellosound:
