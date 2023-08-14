@@ -13,7 +13,7 @@ architectures:
 apps:
   hellosound:
     command: bin/hello
-    plugs: [x11, pulseaudio]
+    plugs: [x11, wayland, pulseaudio]
 
 parts:
   hellosound:
