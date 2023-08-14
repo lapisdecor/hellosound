@@ -1,5 +1,6 @@
 name: hellosound
-version: '1.0'
+base: core22
+version: 'git'
 summary: Test a sound with pulseaudio in a snap 
 description: |
   This snap tests a sound using pulseaudio and a python3 program
@@ -9,7 +10,7 @@ confinement: strict # use 'strict' once you have the right plugs and slots
 
 apps:
   hellosound:
-    command: hello
+    command: bin/hello
     plugs: [x11, pulseaudio]
 
 parts:
